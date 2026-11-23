@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#087f5b">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindIt - Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🔍 FindIt</h1>
+        <p>Campus Lost & Found Portal</p>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="hero">
+        <h2>Lost Something? Find It Here!</h2>
+        <p>Helping students find their lost belongings.</p>
+        <button onclick="showForm()">Report an Item</button>
+    </section>
+
+    <!-- Report Item Form -->
+    <section class="form-section hidden" id="reportForm">
+        <h2>Report Lost or Found Item</h2>
+
+        <form id="itemForm">
+
+            <label>Item Name</label>
+            <input type="text" id="itemName"
+                   placeholder="Enter item name" required>
+
+            <label>Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option>Electronics</option>
+                <option>Books</option>
+                <option>Accessories</option>
+                <option>Documents</option>
+                <option>Others</option>
+            </select>
+
+            <label>Location</label>
+            <input type="text" id="location"
+                   placeholder="Where was it lost or found?" required>
+
+            <label>Report Type</label>
+            <select id="type" required>
+                <option value="">Select Type</option>
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
+            </select>
+
+            <label>Description</label>
+            <textarea id="description"
+                      placeholder="Describe the item"></textarea>
+
+            <button type="submit">Submit Report</button>
+            <button type="button" onclick="hideForm()">Cancel</button>
+
+        </form>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search Items</h2>
+
+        <input type="text" id="searchInput"
+               placeholder="Search by item name or location...">
+
+        <div class="filters">
+            <button onclick="filterItems('All')">All</button>
+            <button onclick="filterItems('Lost')">Lost Items</button>
+            <button onclick="filterItems('Found')">Found Items</button>
+        </div>
+    </section>
+
+    <!-- Items Display -->
+    <section class="items-section">
+        <h2>Recent Reports</h2>
+        <div id="itemsList"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 FindIt | Campus Lost & Found</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

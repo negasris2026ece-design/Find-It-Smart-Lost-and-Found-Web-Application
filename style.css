@@ -1,0 +1,228 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+/* Welcome Section */
+.hero {
+    background: linear-gradient(135deg, #087f5b, #20a879);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #087f5b;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #065f46;
+    transform: translateY(-2px);
+}
+
+.hero button {
+    background-color: white;
+    color: #087f5b;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #e6fff4;
+}
+
+/* Form Section */
+.form-section {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    color: #087f5b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #087f5b;
+    box-shadow: 0 0 4px rgba(8,127,91,0.3);
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* Hide Form */
+.hidden {
+    display: none;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.search-section h2 {
+    color: #087f5b;
+    margin-bottom: 15px;
+}
+
+.search-section input {
+    max-width: 550px;
+}
+
+/* Filter Buttons */
+.filters {
+    margin-top: 15px;
+}
+
+/* Items Section */
+.items-section {
+    padding: 25px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.items-section h2 {
+    text-align: center;
+    color: #087f5b;
+    margin-bottom: 20px;
+}
+
+/* Item Cards */
+.item-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 5px solid #087f5b;
+}
+
+.item-card h3 {
+    color: #087f5b;
+    margin-bottom: 8px;
+}
+
+.item-card p {
+    margin: 5px 0;
+}
+
+.item-card button {
+    margin-top: 10px;
+}
+
+.item-card.claimed {
+    opacity: 0.65;
+}
+
+/* Footer */
+footer {
+    background-color: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .form-section {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+    .items-section {
+        padding: 20px 12px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
